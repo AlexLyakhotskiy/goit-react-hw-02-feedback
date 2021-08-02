@@ -1,0 +1,28 @@
+.wrapper {
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  background-color: lightcyan;
+  border: 1px solid black;
+  transition: background-color 200ms linear;
+}
+
+.button:hover {
+  color: white;
+  background-color: blue;
+}
+
+.button:active {
+  color: white;
+  background-color: red;
+}
+
+.button:not(:last-child) {
+  margin-right: 10px;
+}
