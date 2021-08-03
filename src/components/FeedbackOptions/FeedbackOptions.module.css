@@ -11,6 +11,7 @@
   background-color: lightcyan;
   border: 1px solid black;
   transition: background-color 200ms linear;
+  text-transform: capitalize;
 }
 
 .button:hover {

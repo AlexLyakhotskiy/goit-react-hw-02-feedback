@@ -5,19 +5,16 @@ import styles from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => (
   <div className={styles.wrapper}>
-    {options.map(item => {
-      const buttonName = item[0].toUpperCase() + item.slice(1);
-      return (
-        <button
-          className={styles.button}
-          onClick={() => onLeaveFeedback(item)}
-          key={item}
-          type="button"
-        >
-          {buttonName}
-        </button>
-      );
-    })}
+    {options.map(item => (
+      <button
+        className={styles.button}
+        onClick={() => onLeaveFeedback(item)}
+        key={item}
+        type="button"
+      >
+        {item}
+      </button>
+    ))}
   </div>
 );
 
